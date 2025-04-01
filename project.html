@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+    <div class="navbar">
+       <h2> <strong>Book's Annotation</strong></h2>
+    </div>
+
+    <div class="container">
+        <div class="conbody">
+            <h2>Five Point Someone</h2>
+            <h3>Chetan Bhagat</h3>
+            <p>
+                The novel is praised for its relatable characters and easy-to read narrative,
+                making it a favorite among young readers.
+                This book resonates with students and young professionals dealing with academic stress and societal expectations.       
+            </p>
+            <button onclick="del(event)" id="btnn">Delete</button>
+        </div>       
+    </div>    
+
+        <div id="inpop"></div>
+        <div id="indes">
+            <h2>Add Book</h2>
+            <form>
+                <input type="text" placeholder="Book title" id="book-title">
+                <input type="text" placeholder="Book Author" id="book-author">
+                <textarea placeholder="Add Description" id="des"></textarea>
+                <button id="addbook">Add </button>
+                <button id="cancelbook" onclick="cancl(event)">Cancel </button>
+            </form>
+        </div>
+        <button id="btn1">+</button>
+
+
+        <script src="project.js"> </script>
+
+</body>
+</html>
